@@ -17,7 +17,18 @@ Library Management System
 2. List Books
 3. Add User
 4. Checkout Book
-5. Exit
+5. Search Book by Title
+6. Search Book by Author
+7. Search Book by ISBN
+8. Update Book Information
+9. Delete Book
+10. List Users
+11. Search User by Name
+12. Search User by ID
+13. Update User Information
+14. Delete User
+15. Check In Book
+16. Exit
 Enter choice:
 
 
