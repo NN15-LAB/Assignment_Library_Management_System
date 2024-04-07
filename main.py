@@ -11,8 +11,13 @@ class LibrarySystem:
         self.storage = Storage()
 
         # Load data from storage
-        self.book_manager.books = self.storage.load_data("books.json")
-        self.user_manager.users = self.storage.load_data("users.json")
+        book_data = self.storage.load_data("books.json")
+        for book_info in book_data:
+            self.book_manager.add_book(book_info['title'], book_info['author'], book_info['isbn'])
+
+        user_data = self.storage.load_data("users.json")
+        for user_info in user_data:
+            self.user_manager.add_user(user_info['name'], user_info['user_id'])
 
     def save_data(self):
         # Save data to storage
